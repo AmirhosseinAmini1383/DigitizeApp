@@ -3,19 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="//unpkg.com/alpinejs" defer></script>
     <link rel="stylesheet" href="build/tailwind.css" />
     <title>DigitizeApp - Shop</title>
   </head>
   <body class="bg-gray-100">
     <div>
       <!-- app bar -->
-      <div class="px-4 md:hidden flex items-start justify-between mt-10 mb-6">
+      <div class="px-4 md:hidden flex items-center justify-between mt-10 mb-6">
         <div class="">
-          <img src="../assets/images/logo-mobile.svg" alt="logo-mobile" />
+          <img src="../assets/images/logo/logo-mobile.svg" alt="logo-mobile" />
         </div>
         <div class="text-lg font-bold text-slate-800">ساعت هوشمند</div>
         <div
-          class="w-7 h-7 bg-white shadow-lg flex items-center justify-center rounded"
+          class="w-7 h-7 bg-white shadow-[0_2px_8px_0_rgba(0,0,0,0.2)] flex items-center justify-center rounded"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -747,16 +748,16 @@
           <div
             x-data="{ 
             products : [
-              {id : 1 , title : 'اپل واچ سری ۹' , price : '۱۸,۸۹۹,۰۰۰ تومان' , imageUrl : '../assets/images/apple-watch-9.png'},
-              {id : 2 , title : 'اپل واچ اولترا ۲' , price : '۴۱,۶۰۰,۰۰۰ تومان' , imageUrl : '../assets/images/apple-watch-ultra2.png'},
-              {id : 3 , title : 'ساعت هوشمند اپل سری ۷' , price : '۱۴,۹۹۹,۰۰۰  تومان' , imageUrl : '../assets/images/apple-watch-7.png'},
-              {id : 4 , title : 'اپل واچ سری ۹' , price : '۱۸,۸۹۹,۰۰۰ تومان' , imageUrl : '../assets/images/apple-watch-9.png'},
-              {id : 5 , title : 'اپل واچ اولترا ۲' , price : '۴۱,۶۰۰,۰۰۰ تومان' , imageUrl : '../assets/images/apple-watch-ultra2.png'},
-              {id : 6 , title : 'ساعت هوشمند اپل سری ۷' , price : '۱۴,۹۹۹,۰۰۰  تومان' , imageUrl : '../assets/images/apple-watch-7.png'},
-              {id : 7 , title : 'اپل واچ سری ۹' , price : '۱۸,۸۹۹,۰۰۰ تومان' , imageUrl : '../assets/images/apple-watch-9.png'},
-              {id : 8 , title : 'اپل واچ اولترا ۲' , price : '۴۱,۶۰۰,۰۰۰ تومان' , imageUrl : '../assets/images/apple-watch-ultra2.png'},
-              {id : 9 , title : 'ساعت هوشمند اپل سری ۷' , price : '۱۴,۹۹۹,۰۰۰  تومان' , imageUrl : '../assets/images/apple-watch-7.png'},
-              {id : 10, title : 'اپل واچ اولترا ۲' , price : '۴۱,۶۰۰,۰۰۰ تومان' , imageUrl : '../assets/images/apple-watch-ultra2.png'},
+              {id : 1 , title : 'اپل واچ سری ۹' , price : '۱۸,۸۹۹,۰۰۰ تومان' , imageUrl : '../assets/images/apple-watch/apple-watch-9.png'},
+              {id : 2 , title : 'اپل واچ اولترا ۲' , price : '۴۱,۶۰۰,۰۰۰ تومان' , imageUrl : '../assets/images/apple-watch/apple-watch-ultra2.png'},
+              {id : 3 , title : 'ساعت هوشمند اپل سری ۷' , price : '۱۴,۹۹۹,۰۰۰  تومان' , imageUrl : '../assets/images/apple-watch/apple-watch-7.png'},
+              {id : 4 , title : 'اپل واچ سری ۹' , price : '۱۸,۸۹۹,۰۰۰ تومان' , imageUrl : '../assets/images/apple-watch/apple-watch-9.png'},
+              {id : 5 , title : 'اپل واچ اولترا ۲' , price : '۴۱,۶۰۰,۰۰۰ تومان' , imageUrl : '../assets/images/apple-watch/apple-watch-ultra2.png'},
+              {id : 6 , title : 'ساعت هوشمند اپل سری ۷' , price : '۱۴,۹۹۹,۰۰۰  تومان' , imageUrl : '../assets/images/apple-watch/apple-watch-7.png'},
+              {id : 7 , title : 'اپل واچ سری ۹' , price : '۱۸,۸۹۹,۰۰۰ تومان' , imageUrl : '../assets/images/apple-watch/apple-watch-9.png'},
+              {id : 8 , title : 'اپل واچ اولترا ۲' , price : '۴۱,۶۰۰,۰۰۰ تومان' , imageUrl : '../assets/images/apple-watch/apple-watch-ultra2.png'},
+              {id : 9 , title : 'ساعت هوشمند اپل سری ۷' , price : '۱۴,۹۹۹,۰۰۰  تومان' , imageUrl : '../assets/images/apple-watch/apple-watch-7.png'},
+              {id : 10, title : 'اپل واچ اولترا ۲' , price : '۴۱,۶۰۰,۰۰۰ تومان' , imageUrl : '../assets/images/apple-watch/apple-watch-ultra2.png'},
             ] 
           }"
             class="grid gap-x-2 gap-y-6 grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:gap-x-4 md:gap-x-6 md:gap-y-10"
@@ -866,9 +867,7 @@
                   x-text="product.price"
                   class="text-orange-600 font-medium text-left text-sm mb-4 sm:text-base lg:text-lg"
                 ></div>
-                <div
-                  class="border-b border-slate-200 mb-1 rounded-sm hover:bg-gray-50"
-                ></div>
+                <div class="border-b border-slate-200 mb-1 rounded-sm"></div>
                 <div
                   class="w-full font-bold text-orange-600 text-sm py-1 md:text-lg text-center cursor-pointer"
                 >
@@ -979,6 +978,5 @@
         </ul>
       </nav>
     </div>
-    <script src="//unpkg.com/alpinejs" defer></script>
   </body>
 </html>

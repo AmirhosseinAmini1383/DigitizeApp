@@ -2,3 +2,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@media (max-width: 324px) {
+  .mobile-justify-start {
+    justify-content: start;
+  }
+}
