@@ -2,7 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@media (max-width: 324px) {
+@media (max-width: 356px) {
   .mobile-justify-start {
     justify-content: start;
   }
