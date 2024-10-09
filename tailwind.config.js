@@ -4,14 +4,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Vazirmatn"],
+        sans: ["iranyekan"],
       },
     },
   },
   plugins: [
     require("@tailwindcss/forms")({
-      strategy: 'base', // only generate global styles
-      strategy: 'class', // only generate classes
+      strategy: "base", // only generate global styles
+      strategy: "class", // only generate classes
     }),
   ],
 };
